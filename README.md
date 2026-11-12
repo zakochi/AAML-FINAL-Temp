@@ -232,7 +232,7 @@ Each group member must present the part they claimed responsibility for in the t
 
 ## Submission 時間待改
 ----
-- **Deadline: 2025/12/24 10:00** 
+- **Deadline: 2026/12/24 10:00** 
     - Your last commit will be considered as your submission time.
     - Fill in your repo link and your presentation slides link to the spreadsheet before the deadline.
 - Please fork the repo and push your work to it.
