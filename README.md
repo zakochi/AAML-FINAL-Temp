@@ -170,14 +170,14 @@ If you just want to check the latency of your design, it would be easier to run 
 ## Presentation 報告日期待改
 ----
 - You should give a presentation in the last class of this semester.
-    - **2025/12/24(Wen.)**, starting at **10:10**.
+    - **2026/12/24(Thu.)**, starting at **10:10**.
 - Time Limit: At most **5 minutes** per team.
 - Content:
     - Task Assignment Table
     - Accelerated Items
     - Introduction: Strategy for SW profiling & HW architecture.
-    - Implementation: Details of your CFU & kernel optimizations.
-    - Evaluation: Final accuracy & latency.
+    - Implementation: Details of your NPU & kernel optimizations.
+    - Evaluation: Final accuracy & latency & hardware utilization.
 
 ```{important}
 Each group member must present the part they claimed responsibility for in the task assignment table.
@@ -233,8 +233,10 @@ Each group member must present the part they claimed responsibility for in the t
 ## Submission 時間待改
 ----
 - **Deadline: 2026/12/24 10:00** 
-    - Your last commit will be considered as your submission time.
-    - Fill in your repo link and your presentation slides link to the spreadsheet before the deadline.
+    - Your last commit will be considered as your submission time. (We only accept timestamps **from the main branch**.)
+    - Submit your repo link and slides **to E3** before the deadline.
+    - You should keep your repo private until 2026/12/24 10:00.
+    - You **must** change your repo to public after 2026/12/24 10:00, **otherwise you will receive 0 points**.
 - Please fork the repo and push your work to it.
     - If you use a custom model architecture, you **MUST** follow these steps:
         1. Explicitly state in README.md that you are using a custom memory layout.
