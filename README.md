@@ -17,6 +17,7 @@ The model takes a long time (**>60 minutes**) to inference the full evaluation d
 ## Setup
 ----
 ### Clone the Final Project Template
+We have integrated all the necessary files into the repo. Please clone it into a clean environment.
 ```bash
 這邊直接給軟硬體整合好的一整包好了，包含model跟註冊的ops，等弄完平台補。到時候直接git clone 網址/AAML-final-2026
 ```
