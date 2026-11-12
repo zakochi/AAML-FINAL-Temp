@@ -230,7 +230,7 @@ Each group member must present the part they claimed responsibility for in the t
 (\text{Highest score} = 1 \times (80 + 20 - 0) = 100)
 \end{gather*}
 
-## Submission 時間待改
+## Submission
 ----
 - **Deadline: 2026/12/24 10:00** 
     - Your last commit will be considered as your submission time. (We only accept timestamps **from the main branch**.)
