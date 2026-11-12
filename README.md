@@ -5,7 +5,7 @@
 In this final project, you are required to design a NPU to accelerate the BERT-Medium model for natural language processing (NLP) sequence classification tasks. The primary goal is to minimize inference latency—targeting well under the software-only execution time—while maintaining the model's accuracy.
 
 ### Selected Model
-We use an INT8 quantized version of the BERT-Medium architecture. The default implementation provided in the template is configured with a fixed sequence length of 125 to optimize the matrix dimensions for hardware acceleration while preserving sequence classification performance.
+We use an INT8 quantized version of the BERT-Medium architecture. The default implementation provided in the template is configured with a fixed sequence length of 125 to optimize the matrix dimensions for hardware acceleration while preserving sequence classification performance. BERT is an encoder-based model used to classify sequences into positive or negative.
 
 You don’t need to integrate the model yourself; the bare-metal C headers are already included in the CFU template. You can inspect the .tflite model architecture using [Netron](https://netron.app/).
 
@@ -38,7 +38,8 @@ We have integrated all the necessary files into the repo. Please clone it into a
 - **Other Modifiable files**
     - Other tflm operation files related to this model such as transpose.
 - **Custom files**
-    - You can add any files you need to improve your design. 
+    - You can add any files you need to improve your design.
+    - You can even adjust the memory layout if you know how to do. 
 
 ```{important}
 **DO NOT MODIFY ** any other files under tflite-micro
@@ -173,6 +174,7 @@ If you just want to check the latency of your design, it would be easier to run 
 - Time Limit: At most **5 minutes** per team.
 - Content:
     - Task Assignment Table
+    - Accelerated Items
     - Introduction: Strategy for SW profiling & HW architecture.
     - Implementation: Details of your CFU & kernel optimizations.
     - Evaluation: Final accuracy & latency.
@@ -233,7 +235,11 @@ Each group member must present the part they claimed responsibility for in the t
 - **Deadline: 2025/12/24 10:00** 
     - Your last commit will be considered as your submission time.
     - Fill in your repo link and your presentation slides link to the spreadsheet before the deadline.
-
+- Please fork the repo and push your work to it.
+    - If you use a custom model architecture, you **MUST** follow these steps:
+        1. Explicitly state in README.md that you are using a custom memory layout.
+        2. Upload your modified `.tflite` file and the converted `.h` file under the corresponding path.
+        
 - Grading workflow will be:
     1. Clone your repo.
     2. `make prog && make run` 
